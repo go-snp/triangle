@@ -29,6 +29,7 @@ class TriangleExaminer
     end
 
     # a+b > cのみを検査する。他はソートによって保障されている。
+    # not(a+b >C) <-> a+b <= c
     if (edges[0] + edges[1] <= edges[2]) then
       return TriangleType::NOT_TRIANGLE
     end

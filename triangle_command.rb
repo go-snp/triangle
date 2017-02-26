@@ -1,14 +1,10 @@
 require "./triangle_examiner.rb"
+require "./message.rb"
 
 ############################
 # コマンドを実装するクラス。
 ############################
 class Triangle
-
-  NOT_TRIANGLE = "三角形じゃないです＞＜"
-  ORDINARY = "三角形ですね！"
-  ISOSCALES = "二等辺三角形ですね！"
-  EQUILATERAL = "正三角形ですね！"
 
   # コマンドの実行結果をメッセージで返す。
   def self.run(argv)
